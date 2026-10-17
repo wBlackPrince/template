@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug TemplateService.Web",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build backend",
+      "program": "${workspaceFolder}/backend/TemplateService/src/TemplateService.Web/bin/Debug/net10.0/TemplateService.Web.dll",
+      "cwd": "${workspaceFolder}/backend/TemplateService/src/TemplateService.Web",
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_URLS": "http://localhost:5113"
+      },
+      "stopAtEntry": false,
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+      }
+    }
+  ]
+}
